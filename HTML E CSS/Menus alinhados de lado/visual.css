@@ -1,0 +1,46 @@
+/*Header da pagina*/
+header {
+    background-color: aqua;
+    height: 150px;
+}
+.header-button {
+    background-color: blue;
+    width: 50%;
+    margin-left: 25%;
+}
+ul.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-button li {
+    display: list-item;
+}
+
+/*main da pagina*/
+.main {
+    background-color: bisque;
+    height: 570px;
+}
+
+/*Footer da pagina*/
+footer {
+    background-color: cadetblue;
+    height: 220px;
+    font-size: 20px;
+    display: flex;
+    padding: 0px 0px 20px;
+}
+footer div {
+    width: 40%;
+}
+.footerPri {
+    margin-left: 50px;
+}
+.footerSeg {
+    margin-left: 50px;
+}
+#duas {
+    columns: 2;
+    column-gap: 0px;
+}
