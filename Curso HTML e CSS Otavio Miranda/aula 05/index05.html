@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Existem tag em "block"(bloco) e "inline", o block ocupa toda a largura e quebra a linha
+    já o "inline" ocupa somente o espaço daquele elemento-->
+    <style>
+        h1 {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Cabeçalho</h1>
+    <!--"<b>" é para deixar em negrito, "<strong>" é para dizer que é uma palavra mais forte
+    com valor semantico e é mais recomendavel mudar o style nele ao invez do "<b>"
+     "i" é para colocar em italico, "em" é para dar ênfase-->
+    <!--"img" é possivel colocar no "<p>", também dá pra colocar imagem em links("<a>")
+        "<del>" serve para riscar o texto como se fosse uma errata
+        "<ins>" serve para como se fosse adicionado uma palavra    
+        "<s>" somente para risca o texto, "<u>" serve para sublinhar
+        "<small>" faz um texto menor, 
+        "<sup>" numero elevado
+        "<sub>" numero decido, "<q>" coloca aspas duplas como se fosse uma citação
+        "<span>" é um conteiner generico inline, normalmente usado em paragrafos e etc
+
+        -->
+    <p>
+        <small>Lorem</small>, <b>ipsum</b> dolor <strong>sit</strong> amet <q>consectetur</q> adipisicing elit. 
+        Eius <i>omnis</i> <em>facere</em> corrupti inventore reiciendis nobis? Ea quidem,
+        <span style="color: red;">laboriosam</span>  2<sup>2</sup> H<sub>2</sub>o itaque dolores, libero sed quibusdam et perspiciatis 
+        <a href="https://www.nike.com.br/?gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6UoYBfyyMvag0PKt1uUceAs4TsZsneZruc_JUF21ZffDxToXhrMJDaBoC33oQAvD_BwE" target="_blank">
+        <img  src="https://s2-epocanegocios.glbimg.com/8_7az2F8YwSp2M87viiZgtvwANg=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e536e40f1baf4c1a8bf1ed12d20577fd/internal_photos/bs/2023/c/7/JB4LhKQa2pJiQqBeHAOA/gettyimages-1240415220.jpg"
+        alt="foto de robo" width="100"></a>
+        nobis, <s>hic</s> <u>atque</u> <del>maiores</del> <ins>mae</ins> <a href="https://www.nike.com.br/?gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6UoYBfyyMvag0PKt1uUceAs4TsZsneZruc_JUF21ZffDxToXhrMJDaBoC33oQAvD_BwE" target="_blank">debitis</a>.
+    </p>
+    <!--Tags que não são inline-->
+    <!--"<blockquote" usado para fazer uma citação em bloco
+    "<hr>" faz uma linha
+    "<code>" quando o texto é um codigo, "<pre>" serve para fazer um texto pre-formatado
+     "<div>" é um conteiner generico em bloco   
+    -->
+    <hr>
+    <p><small>Lorem</small>, <code>console.log</code> <b>ipsum</b> dolor <strong>sit</strong></p>
+    <hr>
+    <blockquote>Aqui sim eu estou fazendo um bloco de citação</blockquote>    
+    <pre>
+    <code>
+    funtion seliga(){
+        let = let+1;
+        getElementById('p').inner.HTML = ta ligado;
+    }</code>
+    </pre>
+    <div>
+        <p>Eu sou um bloco</p>
+    </div>
 </body>
 </html>
