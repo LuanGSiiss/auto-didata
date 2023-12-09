@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classe, id e tag style</title>
+    
+    <style>
+        h1 {
+            background-color: red;
+        }
+        /*ultimo comando vai prevalecer*/
+        p {
+            background-color: blue;
+        }
+        /*O ID é mais forte que a class, ela vai supreencrever*/
+        #cabecalho-dois {
+            color: black;
+        }
+        .fundo-vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho borde-esquerda" >
+        Vai vir aqui
+    </h1>
+    <h1 id="cabecalho-dois" class="fundo-vermelho">
+        Vai vir aqui
+    </h1>
+    <P>
+        <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Nostrum qui nesciunt culpa tempora? Mollitia eligendi officiis enim, corporis eveniet repudiandae repellendus, quos odio culpa rerum similique ducimus labore quae unde?
+    </P>
+</body>
+</html>
