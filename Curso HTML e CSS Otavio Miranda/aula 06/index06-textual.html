@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="index06.html">
+    <link rel="stylesheet" href="exemploEstilos.css">
+    <title>Analisando todas as tags HTML</title>
+    <meta name="description" content="Aqui nesta pagina vamos ir testando as tags textuais segundo a 'Mmdn web docs' ">
+    <meta name="author" content="Luan Gerber Siiss">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <!--CONTEÚDO TEXTUAL-->
+    <header>
+        <h1>Isso é um titulo da pagina</h1>
+    </header>
+    <main> 
+        <!-- "<div>" é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele deve ser utilizado somente quando não tiver outro elemento de semântica-->
+        <div>
+            <!--<p> os parágrafos são usados ​​para agrupar conteúdos relacionados de qualquer tipo, como imagens e campos de um formulário.-->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem doloremque praesentium sequi totam dicta rerum laborum debitis, exercitationem quos sunt necessitatibus. Eius molestiae voluptatum totam ratione magnam quidem magni aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tempora quasi reprehenderit quis magni, placeat optio reiciendis commodi illo animi saepe porro distinctio iure, dolor obcaecati ad minus! Quaerat, unde?</p>
+        </div>
+        <br>
+        <br>
+        <!-- <dl>, <dd> e <dt> são uma lista de descrição, com termos e descrições-->
+        <dl>
+            <dt>Café</dt>
+            <dd>Bebida preta quente</dd>
+            <dt>Leite</dt>
+            <dd>Bebida branca fria</dd>
+        </dl> 
+        <!-- <figure> é usado para marcar uma foto em um documento-->
+        <figure>
+            <img src="https://www.w3schools.com/tags/pic_trulli.jpg" alt="Trulli" width="50%">
+            <!-- <figcaption> é usado para definir uma legenda para a foto:-->
+            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+        <!-- <hr> representa uma quebra temática entre elementos de nível de parágraf. Pode continuar sendo exibido como
+        uma linha horizontal nos navegadores, mas agora está definido em termos semânticos, em vez de termos de apresentação.-->
+        <hr>
+        <!-- <ul> Lista desordenada, <ol> Lista ordenada e o <li> são os itens da lista.-->
+        <ul>
+            <li>tem a lista ordenada</li>
+            <li>tem a lista desordenada, que é está aqui</li>
+        </ul>
+        <!--Uma alternativa semântica para <ul>-->
+        <menu>
+            <li>Menu é a mesma coisa que a lista</li>
+            <li>Com o mesmo valor semantico</li>
+        </menu>   
+    </main>
+    <footer>
+    </footer>
+    
+</body>
+</html>
