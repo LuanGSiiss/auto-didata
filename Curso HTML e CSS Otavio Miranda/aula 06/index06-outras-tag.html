@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="index06.html">
+    <link rel="stylesheet" href="exemploEstilos.css">
+    <title>Analisando todas as tags HTML</title>
+    <meta name="description" content="Aqui nesta pagina vamos ir testando as tags semânticas textuais inline segundo a 'Mmdn web docs' ">
+    <meta name="author" content="Luan Gerber Siiss">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <!--IMAGEM e MULTIMIDIA-->
+    <!--(Muito avançado) A <area>tag define uma área dentro de um mapa de imagem (um mapa de imagem é uma imagem com áreas clicáveis).-->
+    <!--(Muito avançado) <map> é usado junto a tag <area>-->
+    
+    <!--A <audio> é usada para incorporar conteúdo sonoro em um documento, como música ou outros fluxos de áudio.
+        A <audio> contém uma ou mais <source>tags com diferentes fontes de áudio. O navegador escolherá a primeira fonte compatível.
+        "controls" adiciona controles de reprodução padrão, como botões de reprodução, pausa e controle de volume.-->
+    <audio controls>
+        <source src="midias/horse-01.mp3" type="audio/mp3">
+    </audio>
+    <hr>
+    <!--A <img> é usada para incorporar uma imagem em uma página HTML. A <img> tem dois atributos obrigatórios: "src" e "alt".
+        Sempre especifique a largura e a altura de uma imagem. Se a largura e a altura não forem especificadas, a página poderá piscar enquanto a imagem é carregada.-->
+    <img src="https://www.w3schools.com/images/lynx_in_space.png" alt="astronauto não humano" width="20%" height="100%">
+    <hr>
+    <!--A <track> especifica faixas de texto para elementos <audio> ou <video>. Basicamente é para fazer legenda em video ou audio-->
+    <!--A <video> é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.-->
+    <video width="320" height="240" controls>
+        <source src="https://nikevideo.nike.com/media/v1/pmp4/static/clear/72451143001/76512b4f-282a-4667-864a-583c09c5bef6/21d5a5f6-71b4-4a1c-b521-43ce03934203/main.mp4" type="video/mp4">
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English"><!--Somente exemplo, sem uso-->
+    </video>
+    <hr>
+    <hr>
+    <!--CONTEUDO INTEGRADO-->
+    <!--A tag <iframe> especifica um quadro embutido. Um quadro embutido é usado para incorporar outro documento no documento HTML atual.-->
+    <iframe src="index06-semanticas-textuais.html" title="HTML com varios tags" width="500px" height="250px"></iframe>
+    <hr>
+    <!--A tag <picture> oferece aos desenvolvedores da Web mais flexibilidade na especificação recursos de imagem. 
+        O uso mais comum do elemento <picture> será para direção de arte em projetos responsivos. Em vez de ter uma imagem ampliada ou reduzida com
+        base na largura da janela de visualização, várias imagens podem ser projetadas para preencher melhor o janela de visualização do navegador.-->
+    <picture>
+        <!--A tag <source> é usada para especificar vários recursos de mídia para elementos de mídia, como  <video>, <audio> e <picture>.-->
+        <source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+        <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+</body>
+</html>
