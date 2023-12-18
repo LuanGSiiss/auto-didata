@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="index06.html">
+    <link rel="stylesheet" href="exemploEstilos.css">
+    <title>Tags de tabela</title>
+    <meta name="description" content="Aqui nesta pagina vamos ir testando as tags de conteúdo tabulado segundo a 'Mmdn web docs' ">
+    <meta name="author" content="Luan Gerber Siiss">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <!--A <button> define um botão clicável. Dentro de um elemento <button> você pode colocar texto (e tags como <i>, <b>, <strong>, <br>, <img>, etc.). Isso não é possível com um botão criado com o elemento <input>-->
+    <button type="button">click me</button>
+    <hr>
+    <!--A <option> define uma opção em um selecione a lista. Os <option> elementos ficam dentro de <select>, <optgroup>, ou <datalist> elemento.-->
+    <!--O <select> é usado para criar uma lista suspensa. O elemento <select> é usado com mais frequência em um formulário para coletar informações do usuário.-->
+    <label for="cars">Choose a car:</label>
+    <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+    </select>
+    <hr>
+    
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+    <!--A <datalist> especifica uma lista de opções predefinidas para uma tag <input> elemento. 
+        A <datalist> é usada para fornecer um preenchimento "autocompletar" recurso para <input> elementos.-->
+    <datalist id="browsers">
+        <option value="Edge">Edge</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Opera">Opera</option>
+        <option value="Safari">Safari</option>
+    </datalist>
+    <hr>
+    <!--A tag <form> é usada para criar um formulário HTML para entrada do usuário.-->
+    <form action="/action_page.php">
+        <!--A <fieldset> é usada para agrupar elementos relacionados em um formulário. A <fieldset> desenha uma caixa ao redor dos elementos relacionados.-->
+        <fieldset>
+            <!--A <legend> define uma legenda para o elemento <fieldset>.-->
+            <legend>Personalia:</legend>
+            <!--A <input> especifica um campo de entrada onde o usuário pode inserir dados. O elemento <input> é o mais importante do formulário.-->
+            <!--A <label> define um rótulo para vários elementos:-->
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <hr>
+    <!--A <meter> define uma medida escalar dentro de um intervalo conhecido ou um valor fracionário. Isso também é conhecido como medidor.-->
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="5" min="0" max="10">2 out of 10</meter><br>
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.7">70%</meter>
+    <hr>
+    <!--A <progress> representa o progresso de conclusão de uma tarefa. Use a tag <progress> em conjunto com JavaScript para exibir o andamento de uma tarefa.-->
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100"> 32% </progress>
+    <hr>
+    <label for="cars">Choose a car:</label>
+    <select  name="cars" id="cars">
+        <!--A <optgroup> é usada para agrupar opções relacionadas em um elemento <select> (lista suspensa). Se você tiver uma longa lista de opções, grupos de opções relacionadas serão mais fáceis de manusear para um usuário.-->
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+    <hr>
+    <!--A <output> é usada para representar o resultado de um cálculo (como um realizado por um script).-->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+    </form>
+    <hr>
+    <!--A <textarea> define um controle de entrada de texto multilinha.-->
+    <label for="w3review">Review of W3Schools:</label>
+    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+</body>

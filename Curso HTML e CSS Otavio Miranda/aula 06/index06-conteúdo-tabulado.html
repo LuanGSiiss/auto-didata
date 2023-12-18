@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="index06.html">
+    <link rel="stylesheet" href="exemploEstilos.css">
+    <title>Tags de tabela</title>
+    <meta name="description" content="Aqui nesta pagina vamos ir testando as tags de conteúdo tabulado segundo a 'Mmdn web docs' ">
+    <meta name="author" content="Luan Gerber Siiss">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <!--A <table> define uma tabela HTML. Uma tabela HTML consiste em um <table> elemento e um ou mais <tr>, <th> e <td> elementos.-->
+    <!--O <tr> elemento define uma linha da tabela, o <th> elemento define um cabeçalho de tabela, e o <td> elemento define uma célula da tabela.-->
+    <table>
+        <!--A <caption> define uma legenda de tabela. A <caption> deve ser inserida imediatamente após a <table> tag.-->
+        <caption>Isso é uma leganda desta tabela</caption>
+        <!--A <col> especifica as propriedades de cada coluna dentro de um <colgroup> elemento. A <col> é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha.-->
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cor</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <!--A <tbody> é usada para agrupar o conteúdo do corpo em uma tabela HTML.-->
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>Branco</td>
+                <td>18 Anos</td>
+            </tr>
+            <tr>
+                <td>Luis Felipe</td>
+                <td>Preto</td>
+                <td>19 Anos</td>
+            </tr>
+        </tbody> 
+    </table>
+</body>

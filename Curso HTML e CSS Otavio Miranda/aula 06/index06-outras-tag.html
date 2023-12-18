@@ -39,7 +39,8 @@
     <iframe src="index06-semanticas-textuais.html" title="HTML com varios tags" width="500px" height="250px"></iframe>
     <hr>
     <!--A tag <picture> oferece aos desenvolvedores da Web mais flexibilidade na especificação recursos de imagem. 
-        O uso mais comum do elemento <picture> será para direção de arte em projetos responsivos. Em vez de ter uma imagem ampliada ou reduzida com
+        O uso mais comum do elemento <picture> será para direção de arte em projetos re
+            sponsivos. Em vez de ter uma imagem ampliada ou reduzida com
         base na largura da janela de visualização, várias imagens podem ser projetadas para preencher melhor o janela de visualização do navegador.-->
     <picture>
         <!--A tag <source> é usada para especificar vários recursos de mídia para elementos de mídia, como  <video>, <audio> e <picture>.-->
@@ -47,6 +48,45 @@
         <source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
         <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
     </picture>
+    <hr>
+    <!--DIVERSOS-->
+    <!--O elemento HTML <svg> é um contêiner para gráficos SVG. SVG possui vários métodos para desenhar caminhos, caixas, círculos, texto e imagens gráficas. -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
 
+    <svg width="400" height="100">
+        <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+    </svg>
+
+    <svg width="400" height="180">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+    </svg>
+
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+    <hr>
+    <!--A tag <canvas> é usada para desenhar gráficos, em tempo real, por meio de scripts (geralmente JavaScript).
+        A tag <canvas> é transparente e é apenas um contêiner para gráficos, você deve usar um script para realmente desenhar os gráficos.-->
+    <canvas id="myCanvas">
+        Your browser does not support the canvas tag.
+    </canvas>
+    <!--A tag <script> é usada para incorporar um script do lado do cliente (JavaScript). O elemento <script> contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src.-->
+    <!--Esse script é referente ao <canvas>-->
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+    <!--A <noscript> define um conteúdo alternativo para ser exibido aos usuários que desativaram scripts em seus navegadores ou que possuem um navegador que não suporta scripts.-->
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <hr>
+    <!--A <del> define o texto que foi excluído de um documento. Os navegadores geralmente marcam uma linha no texto excluído.-->
+    <!--A <ins> define um texto que foi inserido em um documento. Os navegadores irão geralmente sublinha o texto inserido.-->
+    <p> Esse texto somente para explicar delecoes e inscercoes, esse <del>testo</del> <ins>texto</ins> não tem erros de portugues</p>
 </body>
 </html>
