@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <meta name="description" content="Falando sobre Box Model">
+    <!--Margin não se soma entre elementos, a maior vai ficar.-->
+    <style>
+        /*Recomendado usar essa configuração de "box-sizing" em todos os elementos*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        
+        .div-one {
+            background: deeppink;
+            /* border: 5px solid black; */
+            border-style: solid;
+            border-width: 10px;
+            border-bottom-color: red;
+            border-top-color: yellow;
+            border-right-color: green;
+            border-left-color: blue;
+            width: 200px;
+            height: 100px;
+            /* É possível difinir um tamanho para cada lado (Cima, direita, baixo, esquerda) ou em um só ou em dois
+            (cima e baixo, esquerda e direita)*/
+            padding: 15px;
+            margin: 20px;
+        }
+        .div-two {
+            background: blue;
+            border: 5px solid black;
+            width: 200px;
+            height: 100px;
+            padding: 15px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-one">
+        Libero ipsum cumque minus molestias vero. Eligendi, pariatur eos.
+    </div>
+    <div class="div-two">2</div>
+</body>
+</html>
