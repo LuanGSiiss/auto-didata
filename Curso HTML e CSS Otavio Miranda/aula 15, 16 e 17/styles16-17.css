@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*---Seleciona todo o "p" diretamente após um "h1".---*/
+/* .pai h1+p  {
+    color:red;
+} */
+
+/*---Seleciona todos os "p" após um "h1".---*/
+.pai h1~p {
+    color:red;
+}
+
+.pai  .um~.dois {
+    color: blue;
+}
+
+
+/*---Seleciona todos os elementos com o "meu-atibudo"(posso criar atribudos no html). Também é possível colocar um valor para o atribudo---*/
+/* [meu-atribudo] {
+    color: green;
+} */
+
+[meu-atribudo="valor"] {
+    color: green;
+}
+
+/*O sinal "~=" significa que tendo esse valor já vai aparecer.---*/
+[meu-atribudo~="valor2"] {
+    color: pink;
+}
+
+/*--- O sinal "^=" significa "começa com".---*/
+[meu-atribudo^="comeco"] {
+    color: red;
+}
+
+/*--- O sinal "^=" significa "termina com".---*/
+[meu-atribudo$="l"] {
+    color: orange;
+}
+
+/*--- O sinal "^=" significa "contem".---*/
+[meu-atribudo*="z"] {
+    color: darkblue;
+}
