@@ -1,0 +1,68 @@
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+/* O "transition" serve para mudar como a transição de propriedade acontece, neste caso foi deixado mais lento */
+.heading {
+    transition: all 300ms ease-in-out;
+}
+
+/* O "hover" é um pseudo-elemento que é ativado com passo o mouse no elemento */
+.heading:hover {
+    background-color: red;
+}
+
+a {
+    color: darkorange;
+}
+
+/* O "link" ativa quando o link ainda não foi clicado. */
+a:link {
+    color: deeppink;
+}
+/* O "visited" ativa quando o link foi clicado. */
+a:visited {
+    color: rgb(122, 20, 255);
+}
+
+a:hover {
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+/* O "active" ativa quando o link está ativo, ou seja, quando estou clicando. */
+a:active {
+    background: orange;
+    color: white;
+    text-decoration: none;
+}
+
+/* O "focus" ativa quando o input está ativo, ou seja, quando está clicado para escrever. */
+input:focus {
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+/* O "disabled" ativa quando o input está desativado*/
+input:disabled {
+    background: red;
+    cursor: not-allowed;
+}
+
+/* O "enabled" ativa quando o input está ativo*/
+input:enabled {
+    background: rgb(216, 239, 248);
+}
+
+/* O "checked" ativa quando o input checkbox está marcado*/
+input:checked ~ {
+    background: red;
+}
+
+/* O "first-child" seleciona o primeiro filho da lista*/
+.pai .lista li:first-child {
+    background: rebeccapurple;
+}
