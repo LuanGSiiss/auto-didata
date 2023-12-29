@@ -1,0 +1,70 @@
+/*
+    ID    classes, atribudos e pseudo-classes    elementos e pseudo-elementos
+    1               0                                       0
+    0               1                                       0
+    1               1                                       0
+    1               1                                       1
+    2               1                                       1
+    2               1                                       2
+    2               2                                       2
+    2               1                                       3
+
+vence tudo <
+!important 
+>
+fluxograma
+
+especificidade
+empate
+style
+!important
+
+*/
+
+#p {
+    background: red;
+}
+
+.para {
+    background: red;
+}
+
+#p.para {
+    background: yellow;
+}
+
+p#p.para {
+    background: pink;
+}
+
+#b p#p.para {
+    background: orange;
+}
+
+body#b p#p.para {
+    background: rgb(0, 255, 13);
+}
+
+body#b p#p.para:hover {
+    background: rgb(25, 0, 255);
+}
+
+body#b p#p.para::selection {
+    background: black;
+    color: white;
+}
+
+
+div {
+    color:blue;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: inherit;
+}
+
+h2 {
+    color: initial;
+}
