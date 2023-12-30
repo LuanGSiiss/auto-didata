@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 10px;
+}
+
+/*jetinho para o grid não ficar com um elemento do lado e se limpar*/
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.grid .col {
+    width: 33.33%;
+    height: 200px;
+    float: left;
+    padding: 10px;
+}
+/* "inline-block" mescla o "inline" com o "block" fazendo a caixa ter tamanho mas ficar um do lado do outro e ocupando somente o seu espaço.*/
+/* "float" significa que o elemento vai ocupar somente o espaço dele e liberar o restante para os outros*/
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: darkorange;
+}
+
+/* O "clear" limpa um lado de um elemento, ou seja, ele se move para não ter nada nesse lado. o "both" limpa os dois*/
+/* p {
+    clear: both;
+} */
