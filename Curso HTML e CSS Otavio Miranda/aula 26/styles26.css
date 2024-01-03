@@ -1,0 +1,55 @@
+/*Uma for inteligente de usar o "rem" para deixar sua pagina responsiva é colocar o tamanho de 10px no "html" e usar o "rem" como se fosse pixels, então 1 rem equivale a 10px. Para colocar esse tamanho "html" é usado porcetagem.*/
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; /*Faz o tela descer mais defacar até a ancora na pagina*/
+}
+
+.pai {
+    font-size: 40px;
+    background: red;
+}
+
+
+/*pixels, unidade de medida absoluta, não é relativa a nada, sempre tem o mesmo tamanho*/
+.p1 {
+    font-size: 20px;
+}
+
+/*em, unidade de medida relativa. Faz o elemente se passear no elemento mais proximo dele, ou seja, no pai*/
+.p2 {
+    font-size: 0.7em;
+}
+
+/*rem, unidade de medida relativa. Faz o elemente se passear no elemento root, no elemento "html"*/
+.p3 {
+    font-size: 1.6rem;
+}
+
+/*vw e vh, unidade de medida relativa. Faz o elemente se passear no viewport*/
+.p4 {
+    font-size: 3vw;
+}
+
+.paizao {
+    background: blue;
+    width: 100rem;
+}
+.paizinho {
+    background: green;
+}
+
+div {
+    height: 100vw;
+}
+
+/*%, A porcentagem é relativa ao elemento pai*/
+.filas {
+    width: 50%;
+    height: 50%;
+    background: yellow;
+}
+
+/*vmax e vmin, unidade realtiva ao qual é o maior ou menor comprimento da pagina*/
+h1 {
+    font-size: 5vmin;
+}

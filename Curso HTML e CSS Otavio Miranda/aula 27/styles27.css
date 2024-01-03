@@ -1,0 +1,17 @@
+p {
+    color: black;
+    background-color: rgb(245, 245, 222);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    direction: ltr; /*left to right*/
+    letter-spacing: 1px; /*espaçamento entre as letras*/
+    word-spacing: 10px; /*espaçamento entre as palavras*/
+    line-height: 30px; /*Altura da linha, meio obvio tem que ser maior que a letra*/
+    text-align: left; /*Alinhamento do texto*/
+    text-decoration: underline; /*Decoração do texto*/
+    text-indent: 50px; /*Faz uma indentação*/
+    text-shadow: 1px 1px 1px red; /*Faz uma sombra*/
+    text-transform: capitalize; /*Controla como as letras estão, minusculas, maiusculas e etc*/
+}

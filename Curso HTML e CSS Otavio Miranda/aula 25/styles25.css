@@ -1,0 +1,22 @@
+div {
+    height: 150px;
+}
+
+/*Utilizando Hexadecimal*/
+.um {
+    background: #FF0000; /* ABCDEF123456789 , os dois primeiros são o vermelho #FF, os dois segundos são o verde #00FF, e os dois últimos o azul #0000FF*/ 
+}
+
+.dois {
+    background: #000; /*Também é possível usar somente 3 números*/ 
+}
+
+/*Utilizando o RGB*/
+.tres {
+    background: rgb(230, 230, 230);
+}
+
+/*RGB com opacidade fica RGBA*/
+.quatro {
+    background: rgba(0, 0, 0, 0.85);
+}
