@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta keywords não é mais usados pelos buscadores, logo não é mais usado nos sites.
+        meta robots foi criada para passar orientações aos mecanismos de pesquisas de se e como eles devem rastrear as páginas do seu site e (index, noindex, follow, nofollow)
+    -->
+    <base href="index06.html"><!--Se fosse na internet "//www.index06.com.br"-->
+    <link rel="stylesheet" href="exemploEstilos.css">
+    <!--meta Tags mais importantes-->
+    <title>pratica 07</title>
+    <meta name="description" content="pratica 07, vamos ver os seletores HTML e meta tags">
+    <meta name="author" content="Luan Gerber Siiss">
+    <meta name="robots" content="index, follow"><!--Quero que essa pagina apareça nas pesquisas e que o buscador siga os links desta pagina para descobrir novas paginas-->
+    
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        header {
+            background-color: gray;
+            width: 100%;
+            height: 85px;
+            margin: 20px;
+        }
+
+        header div {
+            float: left;
+            margin-left: 50px;
+        }
+        
+        header nav {
+            float:right;
+            margin-right: 60px;
+        }
+
+        header li {
+            display: inline;
+            list-style: none;
+            margin: 10px;
+            font-size: 20px;
+        }
+         
+        header a {
+            display: inline;
+            text-decoration: none;
+            color: black;
+        }
+
+        header a:hover {
+            color: rgb(29, 168, 52);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Gerber malhas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Calças</a></li>
+                <li><a href="#">Camisas</a></li>
+                <li><a href="#">Meias</a></li>
+                <li><a href="#">Regadas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p>um div poh</p>
+        </div>
+
+        <article>
+            <h1>preços itens</h1>
+            <p>Nós temos varios produtos excelentes, venha conferir</p>
+        </article>
+        <hr>
+        <p>Minha familia e eu visitamos o centro epcot nesse verão. O clima estava legal, e Epcot estava incrivel! Eu tive um ótimo verão junto a minha familia!</p>
+        <inside>
+            <p>Isso é um complemento ao produtos e execlente preçinhos. beleza?</p>
+        </inside>
+    </main>
+    <footer>
+        <address>
+            <p>Author: Luan Gerber Siiss</p>
+            <nav>
+                <a href="#">Forum</a>
+            </nav>
+        </address>
+    </footer>
+    
+</body>
+</html>
