@@ -6,15 +6,76 @@
     <title>Pratica 12</title>
     <meta name="description" content="Pratica 12, Vamos testar formularios, vou fazer um cadastro de pessoa">
     <meta name="author" content="Luan Gerber Siiss">
-    <style>
-        body {
-            font-family: sans-serif;
-            padding: 0;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="praticastyles12.css">
 </head>
 <body>
+    <form class="cadastro-pessoa" action="#" method="post" target="_blank">
+        <legend class="legend-pessoa">Cadastro de Pessoa</legend>
+        <fieldset class="inputs-pessoa">
+            <p>
+                <label for="nome" class="requirido alinhado">Nome:</label>
+                <input type="text" id="nome" required>
+            </p>
+            
+            <p>
+                <label for="email" class="requirido alinhado">E-mail:</label>
+                <input type="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="password" class="requirido alinhado">Senha:</label>
+                <input type="password" id="password" required>
+            </p>
+           
+            <p>
+                <label for="tipo-pessoa" class="requirido alinhado">Tipo:</label>
+                <select id="tipo-pessoa" required>
+                    <option disabled selected></option>
+                    <option value="pessoa-fisica">Física</option>
+                    <option value="pessoa-juridica">Jurídica</option>
+                </select>
+            </p>
+           
+            <p>
+                <label for="nascimento" class="requirido">Data de Nascimento:</label>
+                <input type="date" id="nascimento" required>
+            </p>
+            
+            <p>
+                <label for="sexo">Sex0:</label>
+                <input type="radio" id="masculino" name="sexo">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="sexo">
+                <label for="feminino">Feminino</label>
+            </p>
+
+            <p>
+                <label for="cor">Cor favorita:</label>
+                <input type="color" id="cor">
+            </p>
+            
+            <p>
+                <label for="file">Coloque seu curriculo:</label>
+                <input type="file" id="file">
+            </p>
+
+            <p>
+                <label for="programa">Marque se você já teve experiencia com programação.</label>
+                <input type="checkbox" id="programa">
+            </p>
+
+            <div class="botoes">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <hr>
     <form>
         <legend>Legenda do Formulario</legend>
         <fieldset>
@@ -95,7 +156,7 @@
         </fieldset>
     </form>
 </body>
-
+<!--Script para o segundo formulario-->
 <script>
     document.getElementById('lembra02').onclick = function () {
         let check = document.getElementById('lembra02');
