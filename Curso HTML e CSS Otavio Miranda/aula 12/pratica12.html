@@ -63,6 +63,9 @@
                 <label for="programa">Marque se você já teve experiencia com programação.</label>
                 <input type="checkbox" id="programa">
             </p>
+            <div id="programador" class="programador">
+
+            </div>
 
             <div class="botoes">
                 <button type="reset">Limpar</button>
@@ -165,6 +168,18 @@
         }
         else {
             document.getElementById('chegou').innerHTML = "";
+        }
+    } 
+</script>
+<!--Script para o formulario mesmo-->
+<script>
+    document.getElementById('programa').onclick = function () {
+        let check = document.getElementById('programa');
+        if (check.checked) {
+            document.getElementById('programador').innerHTML = "Legal";
+        }
+        else {
+            document.getElementById('programador').innerHTML = "";
         }
     } 
 </script>

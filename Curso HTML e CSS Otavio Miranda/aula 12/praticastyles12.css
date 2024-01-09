@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+.programador {
+    margin: 10px;
+}
+
 .cadastro-pessoa {
     width: 600px;
 }
@@ -31,6 +35,11 @@ body {
     width: 60px;
 }
 
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .botoes button {
     background-color: rgb(100, 240, 216);
     color: rgb(10, 10, 10);
@@ -43,6 +52,7 @@ body {
 .requirido {
     color: red;
 }
+
 .requirido::after {
     content: "*";
 }
