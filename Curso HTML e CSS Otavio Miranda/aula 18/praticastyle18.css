@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+}
+
+h1:hover {
+    background-color: rgba( 0, 0, 0, 0.2);
+}
+
+a:active {
+    background-color: rgb(255, 0, 179);
+}
+
+a:link {
+    background-color: orange;
+}
+
+a:visited {
+    background-color: blueviolet;
+}
+
+.foco:focus {
+    background-color: chartreuse;
+}
+
+.caixa:checked {
+    width: 100px;
+    height: 100px;
+}
+
