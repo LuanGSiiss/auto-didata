@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth; /*Faz a pagina rolar devagar quando clica no link*/
+}
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.menu {
+    position: fixed;
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao {
+    margin: 10px;
+}
+
+.navegacao ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao ul li {
+    display: block;
+    width: 100px;
+    height: 50px;
+    transition: all 300ms ease-in-out;
+    
+}
+.navegacao ul li:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.navegacao ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 15px 10px ;
+}
+
+.main .produto {
+    height: 100vh;
+}
+.main .sobre {
+    height: 100vh;
+}
+.main .institucional {
+    height: 100vh;
+}
