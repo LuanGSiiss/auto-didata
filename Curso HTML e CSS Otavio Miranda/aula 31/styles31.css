@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.caixa-redonda {
+    float: left;
+    height: 230px;
+    width: 230px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 20px 0 20px 0; /*Esse atributo muda o raio da borda, é possível fazer circulos com caixas */
+    box-shadow: inset 5px 5px 0 0 blue, 5px 5px 0 rgba(0, 0, 0, 0.3); /* está organizado como esquerda-direita, cima-baixo, desfoque(BLOOR), espalhamento(Como se fosse um padding para sombra).*/
+}
