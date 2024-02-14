@@ -58,6 +58,7 @@ a {
     text-decoration: none;
 }
 
+
 .main-bg {
     background-image: url('../midias/main-bg.svg');
     background-size: cover;
@@ -65,8 +66,12 @@ a {
     color: var(--white-color);
 }
 
+.white-bg {
+    background-color: var(--white-color);
+}
+
 .main-content {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -76,12 +81,11 @@ a {
 }
 
 .menu {
-    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 0.1rem solid #EEE;
 }
 
 .menu-content {
