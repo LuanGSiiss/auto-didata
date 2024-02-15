@@ -18,6 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,6 +60,8 @@ a {
 }
 
 
+
+
 .main-bg {
     background-image: url('../midias/main-bg.svg');
     background-size: cover;
@@ -85,6 +88,8 @@ a {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    z-index: 1;
     border-bottom: 0.1rem solid #EEE;
 }
 
@@ -94,6 +99,40 @@ a {
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.menu-spacing {
+    height: 6.5rem;
+}
+
+.intro-content {
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-image {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
+
+
+.intro-image img{
+    max-width: 100%;
+    margin: auto;
+}
+
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 .menu h1 {
