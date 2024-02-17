@@ -138,8 +138,37 @@ p {
     text-align: center;
 }
 
+.grid-one-content {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter; /*Isso cria um contador*/
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 6rem;
+}
 
 
+
+
+.grid h3 {
+    position: relative; /*Colocado para ser referencia dos pseudo-elementos que estão como position: relative*/
+    font-size: 3rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
 
 .intro-image img{
     max-width: 100%;
@@ -182,4 +211,16 @@ p {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.grid h3::before {
+    /*Isso adiciona um contador como pseudo-elemento antes do h2, ainda não visto sobre contadores*/
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(6deg);
 }
