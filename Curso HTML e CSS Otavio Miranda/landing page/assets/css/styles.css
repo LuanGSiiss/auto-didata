@@ -84,7 +84,7 @@ p {
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .secao {
@@ -119,7 +119,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-image {
@@ -132,14 +132,14 @@ p {
     max-width: 64rem;
     height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .grid-one-content {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -158,6 +158,13 @@ p {
 
 .grid-description {
     padding-bottom: 6rem;
+}
+
+.gallary-image {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
 }
 
 
@@ -197,6 +204,13 @@ p {
     position: relative;
 }
 
+.gallary-image img {
+    transition: all 300ms ease-in-out;
+}
+
+
+
+
 .menu ul li a::after {
     content: '';
     position: absolute;
@@ -223,4 +237,8 @@ p {
     top: -4rem;
     left: -2rem;
     transform: rotate(6deg);
+}
+
+.gallary-image img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
