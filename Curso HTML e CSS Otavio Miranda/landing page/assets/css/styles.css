@@ -141,7 +141,7 @@ table caption {
 
 .intro-content {
     position: relative;
-    top: -7rem;
+    /* top: -7rem; */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -193,6 +193,27 @@ table caption {
     overflow: hidden;
 }
 
+.contact-form {
+    grid-column: span 2;
+}
+
+div.full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.heart {
+    color: rgb(231, 23, 23);
+}
 
 
 
@@ -235,6 +256,55 @@ table caption {
     transition: all 300ms ease-in-out;
 }
 
+.contact-form fieldset {
+    border: none;
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-form .form-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background-color: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.footer a{
+    color: #09300e;
+}
+
 
 
 
@@ -269,4 +339,19 @@ table caption {
 
 .gallary-image img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 5px 2px red;
+}
+
+
+.form-group button:hover {
+    border: 0.5rem solid var(--primary-color);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: rgb(201, 199, 199);
 }
