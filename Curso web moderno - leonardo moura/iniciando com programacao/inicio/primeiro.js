@@ -1,0 +1,1 @@
+console.log('Olá Mundo'); //Isso aqui é uma sentença de código
