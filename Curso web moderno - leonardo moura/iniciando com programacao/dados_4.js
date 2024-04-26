@@ -1,0 +1,1 @@
+const a = 3; //Isso é uma constante, não é possível alterar seu valor
